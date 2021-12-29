@@ -1,0 +1,40 @@
+.Home{
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.HommeBanner{
+    margin: 0 10px;
+    text-align: center;
+}
+.Home h1{
+    margin-bottom: 20px;
+    text-shadow: 7px 7px 5px #121111;
+}
+.Home span{
+    color:#adeb42;
+}
+.Home ul{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.Home ul li{
+    margin-left: 15px;
+}
+.Home ul li i{
+    font-size: 30px;
+    color: white;
+}
+.Home ul li i:hover {
+    font-size: 30px;
+    color: #adeb42;
+}
+@media screen and (max-width:750px) {
+    .Home{
+        flex-direction: column;
+    }
+}

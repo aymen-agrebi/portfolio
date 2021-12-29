@@ -1,0 +1,12 @@
+.Projects{
+    height: 100vh;
+}
+.Projects div {
+    height: 600px;
+    text-align: center;
+    vertical-align: middle;
+}
+.Projects div img{
+    height: 400px;
+    margin: auto;
+}

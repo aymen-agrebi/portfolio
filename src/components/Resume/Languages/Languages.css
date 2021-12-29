@@ -1,0 +1,54 @@
+.Languages{
+    margin: 10px;
+}
+.Languages-bars{
+    display: flex;
+    flex-direction: column;
+}
+.Language{
+    width: 80%;
+    margin: auto;
+}
+.Language-name{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 15px 0;
+    color: #fff;
+}
+.Language-bar{
+    height: 10px;
+    background:#ebebeb;
+    border-radius: 8px;
+}
+.Language-per{
+    height: 100%;
+    background: #adeb42;
+    border-radius: 8px;
+    width: 0%;
+    position: relative;
+    transition: 1s linear;
+}
+.Language-per::before{
+    content: attr(per);
+    position: absolute;
+    font-size: 14px;
+    padding: 4px 6px;
+    color: #000;
+    background-color: #61892f;
+    font-size: 12;
+    top: -40px;
+    right: 0;
+    transform: translateX(50%);
+}
+.Language-per::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #61892f;
+    top: -18px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}

@@ -1,0 +1,19 @@
+.NeonButton{
+    margin: 20px 10px 0;
+    padding: 10px;
+    background-color: #61892f;
+    color: rgba(255, 255, 255, 0.986);
+    font-weight: 800;
+    border: 1px solid #5c832d;
+    border-radius: 20px;
+    box-shadow: 5px 7px 10px 0 #121414;
+}
+.NeonButton:hover{
+    background-color: #adeb42;
+    color: #222629;
+}
+/*
+#ffc982 wood
+#9d8144
+#8dc546 navbar
+*/

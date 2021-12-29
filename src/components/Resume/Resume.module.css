@@ -1,0 +1,38 @@
+.Resume{
+    height: 100vh;
+}
+.ResumeContainer{
+    margin: 10px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.Row2{
+    background: rgb(72 72 72);
+    width: 60%;
+    margin-bottom: 10px;
+}
+.Row1{
+    height: 100%;
+    width: 30%;
+}
+.Row1 ul li {
+    border: 1px solid #61892f;
+    background: #61892f;
+    margin-bottom: 10px;
+    padding: 15px;
+    color: #fff;
+}
+.Row1 ul li{
+    padding: 10px;
+    background-color: #61892f;
+    color: rgba(255, 255, 255, 0.986);
+    font-weight: 800;
+    border: 1px solid #61892f;
+    box-shadow: 15px 15px 1 1#adeb42;
+}
+.Row1 ul li:hover{
+    background-color: #adeb42;
+    color: #222629;
+}

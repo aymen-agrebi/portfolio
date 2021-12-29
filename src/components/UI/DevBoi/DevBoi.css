@@ -1,0 +1,56 @@
+.svg-container svg{
+    height: 350px;
+    width: 350px;
+    margin: 20px 40px;
+}
+#Group-17{
+    animation: hand 1.5s infinite linear  ;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+#react{
+    animation: react 3s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#Vector_7, #Vector_8, #Vector_9, #Vector_10, #Vector_11, #Vector_12, #Vector_13, #Vector_14{
+    animation: light 3s  infinite;
+}
+@keyframes light {
+    0%{
+        fill:#61892f;
+    }
+    50%{
+        fill:#b8fa46;
+    }
+    100%{
+        fill:#61892f;
+    }
+}
+@keyframes react {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes hand {
+    0% {
+        transform: rotateZ(0deg) translateY(20%);
+    }
+    50% {
+        transform: rotateZ(50deg) translateY(0%);
+    }
+    100% {
+        transform: rotateZ(0deg) translateY(20%);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .svg-container svg{
+        height: 250px;
+        width: 250px;
+    }
+}

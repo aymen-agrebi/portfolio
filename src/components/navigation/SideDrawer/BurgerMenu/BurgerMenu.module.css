@@ -1,0 +1,30 @@
+.BurgerMenu {
+    margin: 20px;
+}
+
+.BurgerMenu div{
+    width: 25px;
+    height: 3px;
+    background: #61892f;
+    
+    border-radius: 20%;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.BurgerMenu:hover > div{
+    background: #adeb42;
+}
+
+
+
+.Toggle .Line1 {transform: rotate(-45deg ) translate(-5px, 6px);}
+.Toggle .Line2 {opacity: 0;}
+.Toggle .Line3 {transform: rotate(45deg ) translate(-5px, -6px);}
+
+
+@media screen and (min-width:750px) {
+    .BurgerMenu {
+        display: none;
+    }
+}

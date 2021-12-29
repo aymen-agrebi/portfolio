@@ -1,0 +1,34 @@
+.NavigationItems {
+    height: 100%;
+    width: 100%;
+}
+.NavigationItems ul{
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.NavigationItems ul li {
+    display: inline-block;
+    margin-right: 40px;
+}
+.NavigationItems ul li a{
+    color: #61892f;
+}
+.NavigationItems ul li a:hover{
+    color: #adeb42;
+    display:inline-block;
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari */
+    transform: scale(1.2)
+}
+.Current{
+    color: #adeb42 !important;
+    display:inline-block;
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari */
+    transform: scale(1.2)
+}
