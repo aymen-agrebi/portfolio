@@ -7,7 +7,7 @@ const Layout = (props) => {
     const sideDrawerToggleHandler = () => {
         setShowSideDrawer(!showSideDrawer);
     }
-    console.log(showSideDrawer);
+    
     return (
         <React.Fragment> 
             <Toolbar toggle={sideDrawerToggleHandler} show={showSideDrawer} />

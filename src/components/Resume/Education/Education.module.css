@@ -1,0 +1,11 @@
+.Education{
+    padding: 5px;
+    text-align: left;
+}
+.Education li{
+    padding: 5px;
+    border-bottom: 1px solid #121414;
+}
+.Education span{
+    color:#adeb42;
+}

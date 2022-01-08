@@ -3,6 +3,7 @@ import classes from "./AboutMe.module.css";
 const AboutMe = () => {
   return (
     <div className={classes.AboutMe} id="about-me">
+      <div>
       <h2>About Me</h2>
       <p>
         As a nerd 🙃, I
@@ -18,6 +19,7 @@ const AboutMe = () => {
         and backend development 💪, including the testing and
         the maintenance. 🎢
       </p>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,11 @@
+.Skills{
+    text-align: left;
+    padding: 10px;
+
+}
+.Skills li{
+    margin-bottom: 5px;
+}
+.Skills  span{
+    color: #adeb42 ;
+}

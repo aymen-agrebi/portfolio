@@ -1,5 +1,5 @@
 .Languages{
-    margin: 10px;
+    padding-bottom: 15px;
 }
 .Languages-bars{
     display: flex;
@@ -8,6 +8,7 @@
 .Language{
     width: 80%;
     margin: auto;
+    padding: 10px 0;
 }
 .Language-name{
     font-size: 18px;
@@ -22,12 +23,13 @@
     border-radius: 8px;
 }
 .Language-per{
+    animation: skillbar 2s ease;
     height: 100%;
     background: #adeb42;
     border-radius: 8px;
-    width: 0%;
     position: relative;
     transition: 1s linear;
+    width: attr(per);
 }
 .Language-per::before{
     content: attr(per);
@@ -51,4 +53,13 @@
     right: 0;
     transform: translateX(50%) rotate(45deg);
     border-radius: 2px;
+}
+@media (max-width:768px) {
+    .Language-name{
+        font-size: small;
+    }
+}
+
+@keyframes skillbar {
+    0% {width: 0%;}
 }
