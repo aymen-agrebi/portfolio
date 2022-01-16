@@ -16,28 +16,31 @@
     background: rgb(72 72 72);
     width: 60%;
     margin-bottom: 10px;
+    box-shadow: 15px 15px 1px 1px#1c1d1b;
 }
 .Row1{
     height: 100%;
     width: 30%;
+    
 }
 
-.Row1 ul li{
+.Row1 li{
     margin-bottom: 10px;
     padding: 10px;
     background-color: #61892f;
     color: #ced4da;
     font-weight: 800;
     border: 1px solid #61892f;
-    box-shadow: 15px 15px 1 1#adeb42;
+    box-shadow: 15px 15px 1px 1px#1c1d1b;
 }
-.Row1 ul li:hover{
-    background-color: #adeb42;
-    color: #222629;
+.Row1 li:hover{
+    background-color: #adeb42; 
+    background-color:   ; 
+    color: #222629 ;
 }
-.Row1 ul li:active{
-    background-color: #adeb42;
-    color: #222629;
+.Active{
+    background-color: #adeb42 !important; 
+    color: #222629 !important;
 }
 @media (max-width:768px) {
    

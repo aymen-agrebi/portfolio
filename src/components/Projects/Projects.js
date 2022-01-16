@@ -7,9 +7,11 @@ import 'swiper/swiper.min.css';
 import 'swiper/modules/effect-coverflow/effect-coverflow.min.css';
 import 'swiper/modules/pagination/pagination.min.css';
 import 'swiper/modules/navigation/navigation.min.css';
-import proj1 from '../../assets/projects/burger1.png';
-import proj2 from '../../assets/projects/ecomkeys.png';
-import proj3 from '../../assets/projects/burger.png';
+import proj5 from '../../assets/projects/b.png';
+import proj4 from '../../assets/projects/ecomkeys.png';
+import proj3 from '../../assets/projects/storeflow.png';
+import proj2 from '../../assets/projects/hamla.png';
+import proj1 from '../../assets/projects/amazon.png';
 import './styles.css'
 SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
@@ -38,11 +40,11 @@ const Projects = (props) => {
                     className= 'mySwiper'
                 >
 
-                    <SwiperSlide><a href="https://jupi-burger.web.app/"><img src={proj1} alt="1" /></a> </SwiperSlide>
-                    <SwiperSlide><a href=""><img src={proj3} alt="1" /></a> </SwiperSlide>
-                    <SwiperSlide><a href=""><img src={proj2} alt="1" /></a> </SwiperSlide>
-                    <SwiperSlide><a href=""><img src={proj1} alt="1" /></a> </SwiperSlide>
-                    <SwiperSlide><a href=""><img src={proj1} alt="1" /></a> </SwiperSlide>
+                    <SwiperSlide><a href="https://jupi-burger.web.app/"><img src={proj1} alt="amazon-clone-site" /></a> </SwiperSlide>
+                    <SwiperSlide><a href=""><img src={proj2} alt="hamla startup tn" /></a> </SwiperSlide>
+                    <SwiperSlide><a href=""><img src={proj3} alt="storeflow theme shopify" /></a> </SwiperSlide>
+                    <SwiperSlide><a href=""><img src={proj4} alt="ecomkeys startup fr" /></a> </SwiperSlide>
+                    <SwiperSlide><a href=""><img src={proj5} alt="react app" /></a> </SwiperSlide>
                  
                 </Swiper>
             </div>

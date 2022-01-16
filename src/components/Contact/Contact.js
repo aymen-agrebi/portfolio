@@ -6,8 +6,8 @@ const Contact = () => {
 
   return (
     <div className={classes.Contact} id="contact">
-      <div>
-        <h2>Contact Me</h2>
+      
+        <h2>Get in touch with me</h2>
         <form 
         name="contact" 
         method="post">
@@ -18,7 +18,7 @@ const Contact = () => {
           </textarea>
           <NeonButton buttonType="submit">Send <i class="fa fa-paper-plane" aria-hidden="true"></i></NeonButton>
         </form>
-      </div>
+      
     </div>
   );
 };

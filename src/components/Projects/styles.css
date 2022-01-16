@@ -6,7 +6,7 @@
     width: 100%;
     margin-top: 30px;
 }
-.swiper{padding-bottom: 40px;}
+.swiper{padding-bottom: 40px;height: 500px;}
 .swiper-wrapper{
     height: 100%;
     width: 100%;
@@ -22,10 +22,22 @@
 }
 .swiper-slide img{
     display: block;
-    width: 200px;
+    width: 100%;
+    max-width: 350px;
     height: 400px;
-    object-fit: cover;
     margin: auto;
+    margin-top: 10px;
+    box-shadow: 15px 10px 1px 1px#1c1d1b;
+
+    transform: translateY(0px);
+    transition-duration: 3s,.3s;
+   
+    transition: transform 3s cubic-bezier(.37,0,.63,1) .1s,opacity .3s ease-out;
+    z-index: 9;
+   
+}
+audio, canvas, iframe, img, svg, video {
+    vertical-align: middle;
 }
 
 :root {
@@ -43,4 +55,9 @@
 .swiper-3d .swiper-slide-shadow-right{background-image:linear-gradient(to right,rgba(0,0,0,.1),rgba(0,0,0,0))}
 .swiper-3d .swiper-slide-shadow-top{background-image:linear-gradient(to top,rgba(0,0,0,.1),rgba(0,0,0,0))}
 .swiper-3d .swiper-slide-shadow-bottom{background-image:linear-gradient(to bottom,rgba(0,0,0,.1),rgba(0,0,0,0))}
+
+
+
+
+}
 */

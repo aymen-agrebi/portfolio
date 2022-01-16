@@ -1,0 +1,11 @@
+.Footer{
+   color: #ced4da;
+   display: flex;
+   justify-content: space-between;
+}
+.Footer p{
+    height: 100%;
+    margin: 30px;
+    font-size: x-small;
+    font-weight: 100;
+}

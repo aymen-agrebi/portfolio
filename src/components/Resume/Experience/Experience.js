@@ -13,7 +13,7 @@ const Experience = () => {
                     <p><span> In : </span>
                     Freelance
                     </p>
-                    <p>
+                    <div>
                         <span>Domain : </span>
                         <ul>
                             <li>MongoDB/Express/React/Node</li>
@@ -21,7 +21,7 @@ const Experience = () => {
                             <li>Shopify theme developement</li>
                             <li>WordPress / Woocommerce</li>
                         </ul>
-                    </p>
+                    </div>
                 </li>
                 <li>
                     <p><span>SEP 2016 – OCT 2017 : </span>
