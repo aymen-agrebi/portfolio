@@ -1,0 +1,17 @@
+.Links ul{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.Links ul li{
+    margin-left: 15px;
+}
+.Links ul li i{
+    font-size: 30px;
+    color: #6b6e70;
+}
+.Links ul li i:hover {
+    font-size: 30px;
+    color: #adeb42;
+}

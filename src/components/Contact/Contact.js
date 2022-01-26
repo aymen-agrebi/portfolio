@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className={classes.Contact} id="contact">
       
-        <h2>Get in touch with me</h2>
+        <h2>Get in touch</h2>
         <form 
         name="contact" 
         method="post">

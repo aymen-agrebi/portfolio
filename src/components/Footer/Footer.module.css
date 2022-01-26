@@ -1,11 +1,47 @@
 .Footer{
-   color: #ced4da;
+   color: #6b6e70;
    display: flex;
-   justify-content: space-between;
+   background: #1c1d1b;
+   position: relative;
+   margin-top: 50px;
+   padding-top: 25px;
+}
+.Footer div{
+    width: 33%;
+    text-align: center;
 }
 .Footer p{
-    height: 100%;
-    margin: 30px;
-    font-size: x-small;
-    font-weight: 100;
+    text-align: center;
+    font-size: small;
+    font-weight: 200;
+    margin-top: 35px;
+}
+
+.UpIcon{
+    width: 50px !important;
+    height: 50px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    left: 48%;
+    top: -25px;
+    margin: 0;
+}
+.UpIcon i{
+    width: 100%;margin: auto;
+   font-size: 30px;
+   color: #fff;
+   text-align: center;
+   margin-top: 5px;
+}
+@media screen and (max-width:750px) {
+    .Footer{
+        flex-direction: column;
+        padding: 40px 0;
+    }
+    .Footer div{width: 100%;}
+    .Footer p{margin-top: 0;}
+    .UpIcon{left:45%}
 }
