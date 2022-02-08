@@ -17,22 +17,8 @@
 .Home span{
     color:#adeb42;
 }
-.Home ul{
-    display: flex;
-    justify-content: center;
-    margin: 30px 0;
-}
-.Home ul li{
-    margin-left: 15px;
-}
-.Home ul li i{
-    font-size: 30px;
-    color: white;
-}
-.Home ul li i:hover {
-    font-size: 30px;
-    color: #adeb42;
-}
+.Home i{color:#ced4da;}
+
 @media screen and (max-width:750px) {
     .Home{
         flex-direction: column;

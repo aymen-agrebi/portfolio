@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 import classes from './Resume.module.css';
 import Languages from './Languages/Languages';
 import Education from './Education/Education';
@@ -8,33 +8,30 @@ import Programming from './Programming/Programming';
 import Frameworks from './Frameworks/Frameworks';
 
 const Resume = (props) => {
-    const [selectedElement, setselectedElement] = useState(<Languages />)
-    const getComponentHandler = (id) => {
-        switch (id) {
-            case 'langues':
-                setselectedElement(<Languages/>)
-                break;
-            case 'education':
-                setselectedElement(<Education/>)
-                break;
-            case 'experience':
-                setselectedElement(<Experience/>)
-                break;
-            case 'skills':
-                setselectedElement(<Skills/>)
-                break;
-            case 'programming':
-                setselectedElement(<Programming/>)
-                break;
-            case 'frameworks' :
-                setselectedElement(<Frameworks/>)    
-                break;
-            default: setselectedElement(null)
-                break;
-        }console.log(id);
-        console.log(selectedElement);
+    const [selectedElement, setselectedElement] = useState(<Languages />);
+    const [listItems, setListItems] = useState(
+        [{name: "Langues", class: null, component: <Languages />},
+        {name: "Education", class: null, component: <Education/>},
+        {name: "Experience" ,class: null, component: <Experience/> },
+        {name: "Soft skills" ,class: null, component: <Skills/> },
+        {name: "Programming" ,class: null, component: <Programming/> },
+        {name: "Frameworks" ,class: null, component: <Frameworks/> }
+    ]);
+
+    const getComponentHandler= (list,id) => {
+        const tlist= [{name: "Langues", class: null, component: <Languages />},
+        {name: "Education", class: null, component: <Education/>},
+        {name: "Experience" ,class: null, component: <Experience/> },
+        {name: "Soft skills" ,class: null, component: <Skills/> },
+        {name: "Programming" ,class: null, component: <Programming/> },
+        {name: "Frameworks" ,class: null, component: <Frameworks/> }
+    ];
+        const newList = {...list, class: classes.Active};
+        tlist[id]= newList;
+        setselectedElement(list.component);
+        setListItems(tlist );
     }
-    console.log(selectedElement);
+    
     return (
         <div className={classes.Resume} id="resume">
             <div className="container">
@@ -42,12 +39,7 @@ const Resume = (props) => {
                 <div className={classes.ResumeContainer}>
                     <div className={classes.Row1}>
                         <ul>
-                            <li onClick={()=>getComponentHandler('langues')}> Languages</li>
-                            <li onClick={()=>getComponentHandler('education')}>Education</li>
-                            <li onClick={()=>getComponentHandler('experience')}>Experience</li>
-                            <li onClick={()=>getComponentHandler('skills')}>Soft skills</li>
-                            <li onClick={()=>getComponentHandler('programming')}>Programming languages</li>
-                            <li onClick={()=>getComponentHandler('frameworks')}>Frameworks & libraries</li>
+                            {listItems.map((list,index)=> <li onClick={()=>getComponentHandler(list,index)} className={list.class} key={index}>{list.name}</li>)}
                         </ul>
                     </div>
                     <div className={classes.Row2}>

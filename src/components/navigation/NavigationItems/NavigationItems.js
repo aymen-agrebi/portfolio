@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import classes from './NavigationItems.module.css';
 const NavigationItems = (props) => {
+    const yOffset = window.pageYOffset;
     const [links, setlinks] = useState([
         {name: 'Home', class:null, lien: 'home'},
         {name: 'About Me', class:null, lien: 'about-me'},
@@ -18,8 +19,7 @@ const NavigationItems = (props) => {
             {name: 'Contact Me', class:null, lien: 'contact'}
         ];
         data[id]= newlink;
-        setlinks(data);
-        console.log(data);
+        setlinks(data); 
     };
     let items= null;
     items = links.map((Link, index) => (
