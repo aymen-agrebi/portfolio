@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import classes from './NavigationItems.module.css';
 const NavigationItems = (props) => {
     const yOffset = window.pageYOffset;
-    console.log(yOffset)
     const [links, setlinks] = useState([
         {name: 'Home', class:null, lien: 'home'},
         {name: 'About Me', class:null, lien: 'about-me'},

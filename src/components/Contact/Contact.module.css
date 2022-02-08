@@ -1,46 +1,80 @@
-.Contact{
-    height: 100vh;
-    display: flex;
+.Contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.ContactDetails {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.ContactDetails div {
+  text-align: left;
+  margin: 0 30px;
+  margin-top: 30px;
+  padding: 15px;
+  border: 1px solid #6b6e70;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 1px#1c1d1c;
+  flex-grow: inherit;
+  width: 90%;
+  max-width: 500px;
+}
+.ContactDetails div h3 {
+  color: #ced4da;
+}
+.Contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 90%;
+  margin: 0 30px;
+  margin-top: 50px;
+}
+.Contact form input {
+  border-radius: 20px;
+  margin: 1rem 0;
+  display: block;
+  height: 4rem;
+  padding: 0.375rem 0.75rem;
+  color: black !important;
+  font-size: medium !important;
+  background-color: #c2c2c2;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  box-shadow: 5px 5px 10px 1px#1c1d1c;
+}
+.Contact textarea {
+  margin: 1rem 0;
+  padding: 0.375rem 0.75rem;
+  color: black;
+  font-size: large;
+  background-color: #c2c2c2;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  box-shadow: 5px 5px 10px 1px#1c1d1c;
+}
+.Contact button {
+  box-shadow: 5px 5px 10px 1px#1c1d1c;
+  width: 200px;
+  margin: auto;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .ContactDetails {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.Contact form{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    max-width: 500px;
-    margin: auto;
-}
-.Contact form input{
-    margin: 1rem 0;
-    display: block;
-    height: 4rem;
-    padding: 0.375rem 0.75rem;
-    color: black !important;
-    font-size: medium !important;
-    background-color: #c2c2c2;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    box-shadow: 10px 10px 1px 1px#1c1d1b;
-   
-}
-.Contact textarea{
-        margin: 1rem 0;
-        padding: 0.375rem 0.75rem;  
-    color: black;
-    font-size: large;
-    background-color: #c2c2c2;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    box-shadow: 10px 10px 1px 1px#1c1d1b;
-}
-.Contact button{
-    box-shadow: 10px 10px 1px 1px#1c1d1b;
-    width: 200px;
-    margin: 20px auto;
+  }
+  .ContactDetails div {
+    font-size: small;
+  }
+  .Contact form {
+    margin-top: 20px;
+  }
 }

@@ -1,7 +1,12 @@
-.App{
-    background-color: #222629;
-    color: #6b6E70;
-    width: 100%;
+.App {
+  background-color: #222629;
+  color: #6b6e70;
+  width: 100%;
 }
 
-h2{color: white;text-align: center;padding: 20px 0;padding-top: 90px;}
+h2 {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  padding-top: 70px;
+}
